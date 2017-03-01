@@ -1,0 +1,197 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card_detailing">
+
+    <HorizontalScrollView
+        android:id="@+id/colour_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/white"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/grey"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#E0E0E0"/>
+
+            <Button
+                android:id="@+id/dark_grey"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#616161"/>
+
+            <Button
+                android:id="@+id/black"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#000000"/>
+
+            <Button
+                android:id="@+id/purple"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#673AB7"/>
+
+            <Button
+                android:id="@+id/light_purple"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#9C27B0"/>
+
+
+            <Button
+                android:id="@+id/indigo"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#3F51B5"/>
+
+            <Button
+                android:id="@+id/blue"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#01579B"/>
+
+            <Button
+                android:id="@+id/light_blue"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#03A9F4"/>
+
+            <Button
+                android:id="@+id/cyan"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#00BCD4"/>
+
+            <Button
+                android:id="@+id/teal"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#009688"/>
+
+            <Button
+                android:id="@+id/blue_grey"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#607D8B"/>
+
+            <Button
+                android:id="@+id/green"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#4CAF50"/>
+
+            <Button
+                android:id="@+id/light_green"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#8BC34A"/>
+
+            <Button
+                android:id="@+id/lime"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#CDDC39"/>
+
+            <Button
+                android:id="@+id/brown"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#795548"/>
+
+            <Button
+                android:id="@+id/red"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#F44336"/>
+
+            <Button
+                android:id="@+id/pink"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#E91E63"/>
+
+            <Button
+                android:id="@+id/orange"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#FF5722"/>
+
+            <Button
+                android:id="@+id/deep_orange"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#FF9800"/>
+
+            <Button
+                android:id="@+id/amber"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#FFC107"/>
+
+            <Button
+                android:id="@+id/yellow"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#FFEB3B"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/shapeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/point"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/freehand"
+            android:scaleType="centerInside"/>
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/linehand"
+            android:scaleType="centerInside"/>
+
+        <ImageView
+            android:id="@+id/oval"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/elipsehand"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_below="@id/colour_container"
+        android:layout_above="@id/shapeContainer"
+        android:background="@drawable/card"
+        android:layout_margin="8dp">
+        <com.quaksire.android.handwritenotes.DrawingSurface
+            android:id="@+id/surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            />
+    </RelativeLayout>
+</RelativeLayout>
+
+

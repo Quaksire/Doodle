@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <!-- app:theme="@style/AppCompatAlertDialogStyle" -->
+    <View
+        android:id="@+id/colorView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/redLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:textColor="#009688"
+            android:text="@string/red"/>
+
+        <TextView
+            android:id="@+id/redToolTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/redLabel"
+            android:layout_toEndOf="@id/redLabel"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="#009688"
+            android:textSize="18sp"
+            android:singleLine="true" />
+
+        <SeekBar
+            android:id="@+id/redSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/redToolTip"
+            android:max="255"
+            android:maxHeight="3dip"
+            android:minHeight="3dip"/>
+
+        <TextView
+            android:id="@+id/greenLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/redSeekBar"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:textColor="#009688"
+            android:text="@string/green" />
+
+        <TextView
+            android:id="@+id/greenToolTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/greenLabel"
+            android:layout_toEndOf="@id/greenLabel"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="18sp"
+            android:textColor="#009688"
+            android:layout_below="@id/redSeekBar"
+            android:singleLine="true" />
+
+        <SeekBar
+            android:id="@+id/greenSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/greenToolTip"
+            android:max="255"
+            android:maxHeight="3dip"
+            android:minHeight="3dip" />
+
+        <TextView
+            android:id="@+id/blueLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/greenSeekBar"
+            android:textSize="18sp"
+            android:textColor="#009688"
+            android:singleLine="true"
+            android:text="@string/blue"/>
+
+        <TextView
+            android:id="@+id/blueToolTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_below="@id/greenSeekBar"
+            android:layout_toRightOf="@id/blueLabel"
+            android:layout_toEndOf="@id/blueLabel"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="#009688"
+            android:singleLine="true" />
+
+        <SeekBar
+            android:id="@+id/blueSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/blueToolTip"
+            android:max="255"
+            android:maxHeight="3dip"
+            android:minHeight="3dip"/>
+
+        <Button
+            android:id="@+id/okColorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select"
+            android:layout_below="@id/blueSeekBar"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

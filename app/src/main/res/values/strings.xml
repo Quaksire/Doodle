@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Doodle</string>
+    <string name="action_undo">Undo</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_save">Save</string>
+    <string name="action_share">Share</string>
+    <string name="action_size">Pencil size</string>
+    <string name="action_alpha">Pencil alpha</string>
+    <string name="action_color">Color</string>
+
+    <string name="action_delete">Delete</string>
+
+    <string name="alpha">Alpha</string>
+    <string name="size">Size</string>
+
+    <string name="share_to">Share to</string>
+    <string name="select">Select</string>
+
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="activity_login_alertdialog_loading_description">Loading&#8230;</string>
+
+    <string name="activity_draw_alertdialog_exit_title">Do you want to exit?</string>
+    <string name="activity_draw_alertdialog_exit_description">Your doodle will be lost</string>
+    <string name="activity_draw_alertdialog_exit_positive">Exit</string>
+    <string name="activity_draw_alertdialog_exit_negative">Cancel</string>
+
+    <string name="activity_main_alertdialog_delete_title">Delete doodle?</string>
+    <string name="activity_main_alertdialog_delete_description">Your doodle will be deleted</string>
+    <string name="activity_main_alertdialog_delete_positive">Delete</string>
+    <string name="activity_main_alertdialog_delete_negative">Cancel</string>
+
+
+    <string name="title_activity_main">Welcome to Doodle</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Doodle</string>
+    <string name="title_activity_draw">Doodle</string>
+
+    <!-- Error messages -->
+    <string name="error_user_id">Cannot load correctly the user information. working as default user</string>
+    <string name="error_open_image">Cannot open the image</string>
+</resources>
